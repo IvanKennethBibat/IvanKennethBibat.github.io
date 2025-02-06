@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: 'Pixelify Sans', serif;
+            background-color: pink;
+        }
+        h1 {
+            font-size: 2em;
+            color: red;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-family: 'Pixelify Sans', serif;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #yes {
+            background-color: lightgreen;
+        }
+        #no {
+            background-color: lightcoral;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="Pochaccho_Variant_Urple.gif" alt="Cute Valentine GIF">
+    <h1>Will you be my Valentine?</h1>
+    <div class="buttons">
+        <button id="yes" onclick="showMessage()">Yes !! I love you !!</button>
+        <button id="no" onmouseover="moveButton()">Nope</button>
+    </div>
+    <script>
+        function showMessage() {
+            document.body.innerHTML = '<h1>:) I love you.</h1>';
+        }
+        function moveButton() {
+            let button = document.getElementById("no");
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
