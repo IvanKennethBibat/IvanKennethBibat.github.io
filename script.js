@@ -9,7 +9,7 @@ function moveButton() {
     button.style.left = `${x}px`;
     button.style.top = `${y}px`;
 
-    const messages = ["Nuh uh", "Think again pls", "Wrong", "Click yes smh", "skibidi plz...", ""]
+    const messages = ["Nuh uh", "Think again pls", "Wrong", "Click yes smh", "skibidi plz...", "No"]
 
     button.innerText = messages[Math.floor(Math.random() * messages.length)];
 }
