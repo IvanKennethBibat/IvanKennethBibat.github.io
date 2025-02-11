@@ -1,0 +1,52 @@
+body,html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    font-family: 'Pixelify Sans', serif;
+    background-color: pink;
+}
+h1 {
+    font-size: 2em;
+    color: rgb(36, 25, 25);
+}
+.buttons {
+    margin-top: 20px;
+    text-align: center;   /* Center the text inside the buttons */
+
+}
+button {
+    border-radius: 5px;
+    font-family: 'Pixelify Sans', serif;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#yes {
+    background-color: lightgreen;
+}
+#no {
+    background-color: lightcoral;
+    position: absolute;
+}
+
+.side-gif {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+
+}
+
+.left {
+    left: 0;
+
+}
+
+.right {
+    right: 0;
+}
