@@ -3,8 +3,11 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> <!-- link to style.css -->
+
+    <link rel="shortcut icon" href="images/AnimatedHeartFavicon.gif" type="image/gif">
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,17 +16,18 @@
 </head>
 
 <body>
-    <img src="Pochaccho_Variant_Urple.gif" alt="Cute Valentine GIF">
-    <img src="floating hearts.gif" alt="Floating Hearts" class="side-gif left">
-    <img src="floating hearts.gif" alt="Floating Hearts" class="side-gif right">
+    <img src="images/Pochaccho_Variant_Urple.gif" alt="Cute Valentine GIF">
+    <img id="hearts" src="images/floating hearts.gif" alt="Floating Hearts" class="side-gif left">
+    <img id="hearts2" src="images/floating hearts.gif" alt="Floating Hearts" class="side-gif right">
 
     <h1>Will you be my Valentine?</h1>
     <div class="buttons">
-        <button id="yes" onclick="window.location.href = 'yes.html'">Yes</button>
-        <button id="no" onmouseover="moveButton()">No</button>
+        <button id="yes" onclick="window.location.href = 'yes.html'", onmouseover="yipeeCat()", onmouseout="setHearts()">Yes</button>
+        <button id="no" onmouseover="NoButton()", onmouseout="setHearts()">No</button>
     </div>
 
 
     <script src="script.js"></script> <!-- JavaScript file --> 
 </body>
+
 </html>

@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="style.css"> <!-- link to style.css -->
 
+    <link rel="shortcut icon" href="images/AnimatedHeartFavicon.gif" type="image/gif">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Klaudia</title>
@@ -13,17 +15,48 @@
 </head>
 
 <body>
-    <img src="Pochaccho_Variant_Urple.gif" alt="Cute Valentine Pochaccho GIF">
-    <img src="floating hearts.gif" alt="Floating Hearts" class="side-gif left">
-    <img src="floating hearts.gif" alt="Floating Hearts" class="side-gif right">
-    <!-- <h1>Yipeeee</h1> -->
+    <img src="images/bearyes.gif" alt="Cute Valentine Pochaccho GIF">
+    <img src="images/floating hearts.gif" alt="Floating Hearts" class="side-gif left">
+    <img src="images/floating hearts.gif" alt="Floating Hearts" class="side-gif right">
+    <iframe id="spotify-playlist" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6rxzrbPnH0pTaAIAOlbern?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    
+    <div id="cant-wait">
+        <p>
+            See you later. Can't wait. ♥
+        </p>
+    </div>
 
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4fSQlydK5N657kBXmhFa48?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        <div class="carousel-images" id="carousel">
+            <img src="images/photos/IMG_0684.jpg" alt="1">
+            <img src="images\photos\IMG_0771.jpg" alt="2">
+            <img src="images\photos\IMG_0815.jpg" alt="3">
+            <img src="images\photos\IMG_0863.jpg" alt="4">
+            <img src="images\photos\IMG_0893.jpg" alt="5">
+            <img src="images\photos\IMG_0894.jpg" alt="6">
+            <img src="images\photos\IMG_0896.jpg" alt="7">
+            <img src="images\photos\IMG_0897.jpg" alt="8">
+            <img src="images\photos\IMG_0960.jpg" alt="9">
+            <!-- <img src="images\photos\IMG_0978.jpg" alt="10"> -->
+            <img src="images/photos/IMG_0590.jpg" alt="11">
+            <img src="images/photos/IMG_0452.jpg" alt="12">
+            <img src="images/photos/IMG_0441.jpg" alt="13">
+        </div>
+
+    <div id="date-element">
+        <p id="date-timer"></p>
+    </div>
+    
+    <!-- Toggle Button -->
+    <button id="toggle-button" onclick="switchElement()">Click me plz</button>
+
+
+
 <!-- 
     <div class="buttons">
         <button id="yes" onclick="window.location.href = 'yes.html'">Yay !! I love you !!</button>
 
-        <button id="no" onmouseover="moveButton()">Nope</button>
+        <button id="no" onmouseover="NoButton()">Nope</button>
     </div> -->
 
     <script src="script.js"></script> <!-- JavaScript file --> 

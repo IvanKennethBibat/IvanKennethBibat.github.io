@@ -5,7 +5,7 @@ body,html {
     height: 100%;
     flex-direction: column;
     font-family: 'Pixelify Sans', serif;
-    background-color: pink;
+    background-color: #ffc0cb;
 }
 h1 {
     font-size: 2em;
@@ -14,7 +14,6 @@ h1 {
 .buttons {
     margin-top: 20px;
     text-align: center;   /* Center the text inside the buttons */
-
 }
 button {
     border-radius: 5px;
@@ -31,7 +30,6 @@ button {
 }
 #no {
     background-color: lightcoral;
-    position: absolute;
 }
 
 .side-gif {
@@ -50,3 +48,43 @@ button {
 .right {
     right: 0;
 }
+#cant-wait {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #ff6f61;
+}
+#date-element {
+    font-size: 1.5em;
+    color: #ff6f61;
+}
+
+
+/* PHOTO CAROUSEL CSS */
+.carousel-container {
+    display:none;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-images {
+    display: none;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-images img {
+    width: 300px;
+    height: 200px;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
